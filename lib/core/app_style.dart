@@ -6,6 +6,11 @@ class AppStyle{
     fontWeight: FontWeight.bold,
     color: Color(0xff090F1F)
   );
+  static TextStyle primaryFont10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.bold,
+    color: Color(0xff090F1F)
+  );
   static TextStyle font16Bold = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.bold,
