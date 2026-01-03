@@ -24,6 +24,14 @@ class AppStyle{
 
 
   );
+  static TextStyle primaryFont14Category = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: Color(0xff090F1F)
+
+
+
+  );
   static TextStyle fontGridVert14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,

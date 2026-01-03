@@ -1,8 +1,10 @@
 import 'package:commercial_app/core/app_images.dart';
 import 'package:commercial_app/core/app_style.dart';
-import 'package:commercial_app/features/home/presentation/widgets/list_horizental.dart';
+import 'package:commercial_app/features/home/presentation/widgets/list_horizental_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../widgets/list_horizental_categories.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -25,8 +27,10 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12,),
-              ListHorizental(),
-              SizedBox()
+              ListHorizentalText(),
+              SizedBox(height: 33,),
+              ListHorizentalCategories(),
+
             ],
           ),
         ),

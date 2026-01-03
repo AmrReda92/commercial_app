@@ -2,8 +2,8 @@ import 'package:commercial_app/features/home/presentation/widgets/custom_contain
 import 'package:flutter/material.dart';
 
 
-class ListHorizental extends StatelessWidget {
-  const ListHorizental({super.key});
+class ListHorizentalText extends StatelessWidget {
+  const ListHorizentalText({super.key});
 
   static const List<String> items =[
     "كل العروض",
@@ -18,7 +18,7 @@ class ListHorizental extends StatelessWidget {
       height: 41,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          itemCount: 6,
+          itemCount:items.length,
           itemBuilder: (context,index){
             return Padding(
               padding: const EdgeInsets.only(left: 8.0),
