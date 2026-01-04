@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 
 
 class ListHorizentalText extends StatelessWidget {
-  const ListHorizentalText({super.key});
+  final int selectedIndex;
+  final void Function(int)? onTapItem ;
+
+  const ListHorizentalText({super.key, required this.selectedIndex, this.onTapItem,});
 
   static const List<String> items =[
     "كل العروض",
@@ -22,7 +25,11 @@ class ListHorizentalText extends StatelessWidget {
           itemBuilder: (context,index){
             return Padding(
               padding: const EdgeInsets.only(left: 8.0),
-              child: CustomContainer(item: items[index])
+              child: CustomContainer(
+                  isSelected : selectedIndex==index,
+                  item: items[index],
+                  onTap: ()=> onTapItem!(index),
+              )
             );
           }
       ),

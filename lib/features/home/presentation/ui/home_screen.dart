@@ -7,8 +7,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../widgets/list_horizental_categories.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int selectedIndex=0;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +35,18 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12,),
-              ListHorizentalText(),
+              ListHorizentalText(
+                selectedIndex: selectedIndex,
+                onTapItem: (index){
+                  setState(() {
+                    selectedIndex=index;
+                  });
+                },
+              ),
               SizedBox(height: 33,),
-              ListHorizentalCategories(),
+              ListHorizentalCategories(
+
+              ),
               SizedBox(height: 33,),
               Container(
                 decoration: BoxDecoration(

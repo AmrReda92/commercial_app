@@ -27,6 +27,12 @@ class AppStyle{
     color: Color(0x80090F1F)
 
 
+  );
+  static TextStyle primaryFont14active = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: Color(0xffF95B1C)
+
 
   );
   static TextStyle primaryFont14Category = TextStyle(

@@ -1,8 +1,5 @@
-import 'package:commercial_app/core/app_images.dart';
-import 'package:commercial_app/core/app_style.dart';
 import 'package:commercial_app/features/home/presentation/widgets/custom_container_vertical.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class GridviewVertical extends StatelessWidget {
   const GridviewVertical({super.key});
