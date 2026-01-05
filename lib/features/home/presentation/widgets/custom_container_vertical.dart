@@ -29,7 +29,7 @@ class CustomContainerVertical extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-
+            mainAxisSize: MainAxisSize.min,
             spacing: 8,
             children: [
               Row(

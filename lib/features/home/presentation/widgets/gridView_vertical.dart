@@ -22,7 +22,7 @@ class GridviewVertical extends StatelessWidget {
             crossAxisCount: 2,
             mainAxisSpacing: 12,
              crossAxisSpacing: 12,
-             childAspectRatio: .49
+             childAspectRatio: .47
         ),
         itemBuilder: (context,index) {
         final item = items[index];
